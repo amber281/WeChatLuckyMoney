@@ -1,0 +1,41 @@
+ apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "xyz.monkeytong.hongbao"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 7
+        versionName "v1.0.0"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    signingConfigs {
+        releaseConfig {
+            storeFile file("../monkeytong.jks")
+            storePassword project.hasProperty("KEYSTORE_PASS") ? KEYSTORE_PASS : System.getenv("KEYSTORE_PASS")
+            keyAlias project.hasProperty("ALIAS_NAME") ? ALIAS_NAME : System.getenv("ALIAS_NAME")
+            keyPassword project.hasProperty("ALIAS_PASS") ? ALIAS_PASS : System.getenv("ALIAS_PASS")
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+}
+
+ dependencies {
+     implementation fileTree(include: ['*.jar'], dir: 'libs')
+     implementation 'com.android.support:support-v4:27.1.1'
+     implementation 'com.android.support:appcompat-v7:27.1.1'
+ }
