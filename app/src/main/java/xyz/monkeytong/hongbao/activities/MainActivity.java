@@ -18,10 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
-
 import xyz.monkeytong.hongbao.R;
-import xyz.monkeytong.hongbao.utils.ConnectivityUtil;
-import xyz.monkeytong.hongbao.utils.UpdateTask;
 
 
 public class MainActivity extends Activity implements AccessibilityManager.AccessibilityStateChangeListener {
@@ -81,10 +78,6 @@ public class MainActivity extends Activity implements AccessibilityManager.Acces
         super.onResume();
 
         updateServiceStatus();
-
-        // Check for update when WIFI is connected or on first time.
-        if (ConnectivityUtil.isWifi(this) || UpdateTask.count == 0)
-            new UpdateTask(this, false).update();
     }
 
     @Override
@@ -106,20 +99,13 @@ public class MainActivity extends Activity implements AccessibilityManager.Acces
 
     }
 
-    public void openGitHub(View view) {
-        Intent webViewIntent = new Intent(this, WebViewActivity.class);
-        webViewIntent.putExtra("title", getString(R.string.webview_github_title));
-        String url = "https://github.com/lmx0431/dubbo-example";
-        webViewIntent.putExtra("url", url);
-        startActivity(webViewIntent);
-    }
-
-    public void openUber(View view) {
-        Intent webViewIntent = new Intent(this, WebViewActivity.class);
-        webViewIntent.putExtra("title", getString(R.string.webview_alipay_title));
-        webViewIntent.putExtra("url", "https://qr.alipay.com/eAc1x144234s7q28ctou8as80zTq");
-        startActivity(webViewIntent);
-    }
+//    public void openGitHub(View view) {
+//        Intent webViewIntent = new Intent(this, WebViewActivity.class);
+//        webViewIntent.putExtra("title", getString(R.string.webview_github_title));
+//        String url = "https://github.com/lmx0431/dubbo-example";
+//        webViewIntent.putExtra("url", url);
+//        startActivity(webViewIntent);
+//    }
 
     public void openSettings(View view) {
         Intent settingsIntent = new Intent(this, SettingsActivity.class);

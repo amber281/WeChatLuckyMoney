@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">微信红包</string>
     <string name="app_version">v1.0</string>
-    <string name="app_description">∠( ᐛ 」∠)_使用指南∠( ᐛ 」∠)_\n\n ○ 狠戳插件开关\n ○ 回到微信聊天\n ○ 坐等红包进账\n\n 遇到问题, 欢迎通过 GitHub Issue 反馈~\n https://github.com/geeeeeeeeek/WeChatLuckyMoney</string>
+    <string name="app_description">∠( ᐛ 」∠)_使用指南∠( ᐛ 」∠)_\n\n ○ 狠戳插件开关\n ○ 回到微信聊天\n ○ 坐等红包进账\n\n 遇到问题, 欢迎通过 GitHub Issue 反馈~\n https://github.com/amber281/WeChatLuckyMoney</string>
     <string name="preference">偏好设置</string>
     <string name="update_error">遇到一些问题,请前往GitHub手动更新喵(ฅ´ω`ฅ)</string>
     <string name="update_new_seg1">发现新版本(</string>
@@ -12,7 +12,7 @@
     <string name="service_on">开启插件</string>
     <string name="pref_watch_exclude_words_summary">不拆开包含这些文字的红包(空格间隔)</string>
     <string name="pref_comment_words_summary">随机选择下列感谢语(空格间隔)</string>
-    <string name="url_github_issues">https://github.com/geeeeeeeeek/WeChatLuckyMoney/issues</string>
+    <string name="url_github_issues">https://github.com/amber281/WeChatLuckyMoney/issues</string>
     <string name="home_banner_ad_unit_id">ca-app-pub-8428619221469478/4736153346</string>
     <string name="webview_banner_ad_unit_id">ca-app-pub-8428619221469478/4163694548</string>
     <string name="community">社区</string>
@@ -40,7 +40,7 @@
     <string name="open_self">拆开自己发的红包</string>
     <string name="skip_phrases">屏蔽红包文字</string>
     <string name="about">关于应用</string>
-    <string name="check_new_version">检查新版本</string>
+    <string name="check_new_version">最新版本</string>
     <string name="help_and_feedback">帮助与反馈</string>
     <string name="help_hint">前往GitHub项目主页提交issue</string>
     <string name="labs">实验功能</string>

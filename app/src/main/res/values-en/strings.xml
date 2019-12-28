@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Lucky Money</string>
     <string name="app_version">v1.0</string>
-    <string name="app_description">∠( ᐛ 」∠)_ Instructions ∠( ᐛ 」∠)_\n\n ○ Turn on the Accessibility switch\n ○ Go back to WeChat\n ○ Wait for money comes in\n\n Please submit your feedback on GitHub Issues Page~\n https://github.com/geeeeeeeeek/WeChatLuckyMoney</string>
+    <string name="app_description">∠( ᐛ 」∠)_ Instructions ∠( ᐛ 」∠)_\n\n ○ Turn on the Accessibility switch\n ○ Go back to WeChat\n ○ Wait for money comes in\n\n Please submit your feedback on GitHub Issues Page~\n https://github.com/amber281/WeChatLuckyMoney</string>
     <string name="preference">Preferences</string>
     <string name="update_error">An error occurred. Please manually update from GitHub Release Page. (ฅ´ω`ฅ)</string>
     <string name="update_new_seg1">New version found.(</string>
@@ -12,7 +12,7 @@
     <string name="service_on">Turn On</string>
     <string name="pref_watch_exclude_words_summary">Skip red packets with these phrases (separated by space)</string>
     <string name="pref_comment_words_summary">Randomly choose reply from these phrases (separated by space)</string>
-    <string name="url_github_issues">https://github.com/geeeeeeeeek/WeChatLuckyMoney/issues</string>
+    <string name="url_github_issues">https://github.com/amber281/WeChatLuckyMoney/issues</string>
     <string name="home_banner_ad_unit_id">ca-app-pub-8428619221469478/4736153346</string>
     <string name="webview_banner_ad_unit_id">ca-app-pub-8428619221469478/4163694548</string>
     <string name="community">Community</string>
