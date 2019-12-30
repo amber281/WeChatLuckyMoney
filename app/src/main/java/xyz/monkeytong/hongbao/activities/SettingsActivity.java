@@ -38,7 +38,10 @@ public class SettingsActivity extends FragmentActivity {
             title = getString(R.string.preference);
             fragId = "GeneralSettingsFragment";
         }
-
+        if (title == null && fragId == null) {
+            title = getString(R.string.preference);
+            fragId = "GeneralSettingsFragment";
+        }
         TextView textView = (TextView) findViewById(R.id.settings_bar);
         textView.setText(title);
 

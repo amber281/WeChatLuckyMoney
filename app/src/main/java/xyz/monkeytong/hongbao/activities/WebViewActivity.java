@@ -10,12 +10,14 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import xyz.monkeytong.hongbao.R;
 import xyz.monkeytong.hongbao.utils.DownloadUtil;
 

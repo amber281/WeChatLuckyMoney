@@ -183,6 +183,5 @@
         android:layout_marginRight="12dp"
         android:layout_marginBottom="24dp"
         android:background="#ffffff"
-        android:onClick="openGitHub"
         android:orientation="horizontal" />
 </RelativeLayout>
